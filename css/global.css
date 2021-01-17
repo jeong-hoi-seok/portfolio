@@ -1,0 +1,146 @@
+*{
+  font-family: 'Gothic A1', sans-serif;
+}
+/* font css */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.glo-con{
+  margin: 0 auto; width: 1180px; height: 709px; padding: 150px 0;
+}
+.textani,
+.textaniX{
+  opacity: 0;
+}
+.sub-wrap{
+  width: 1180px; margin: 0 auto; text-align: center;
+}
+.paraFadeIn {
+  animation: slideInY 0.6s ease 0.25s forwards;
+}
+.paraFadeInX{
+  animation: slideInX 0.6s ease 0.25s forwards;
+}
+@keyframes slideInY {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInX {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* global css */
+
+nav{
+  position: fixed; top: 50%; left: 50%; z-index: 100; transform: translateY(-50%);
+  margin-left: 680px;
+}
+nav > div{
+  width: 2px; height: 270px; background-color: #dfe4ea; position: absolute;
+}
+nav > span{
+  display: block; width: 2px; height: 30px; background-color: black; position: absolute;
+  transition-duration: 300ms; transform: translateY(0px); left: 0; top: 0;
+}
+nav ul{
+  margin-left: 20px; transition-duration: 0.3s;
+}
+nav ul .on{
+  color: #2f3542;
+}
+nav ul li{
+  font-size: 14px; font-weight: 400; color: #ced6e0; padding: 8px 0; min-width: 110px;
+  cursor: pointer;
+}
+
+header .glo-con h1{
+  padding-bottom: 473px; width: 147px;
+  animation: slideInY 0.75s ease forwards; opacity: 0;
+}
+header .glo-con h1 img{
+  width: 100%;
+}
+header .glo-con > div{
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+header .glo-con > div address{
+  /* position: absolute; bottom: 75px; left: 0;  */
+  font-size: 24px; font-weight: 600;
+  color: #2f3542;
+  animation: slideInY 0.75s ease 0.25s forwards; opacity: 0;
+}
+header .glo-con > div address > *{
+  display: block; font-weight: 400; font-size: 16px; font-style: normal; color: #57606f;
+  line-height: 20px;
+}
+header .glo-con > div address span:first-of-type{
+  margin-top: 30px;
+}
+header .glo-con > div address > a:hover,
+.about .glo-con ul li address a:hover{
+  font-weight: 400; color: blue;
+}
+header .glo-con > div h2{
+  font-size: 60px; font-weight: 400; text-align: right;
+  /* position: absolute; bottom: 75px; right: 0;  */
+  color: #2f3542;
+  letter-spacing: -0.05em;
+  animation: slideInY 0.75s ease 0.25s forwards; opacity: 0;
+}
+header .glo-con > div h2 strong{
+   font-weight: 900;
+}
+header .glo-con > div h2 small{
+  font-size: 24px; font-weight: 400; display: block; text-align: right; color: #57606f;
+  letter-spacing: 0; line-height: 30px;
+}
+header .glo-con > div h2 small:last-of-type{
+  margin-bottom: 17px;
+}
+/* start */
+
+footer .glo-con h2{
+  font-size: 60px; font-weight: 400; margin-bottom: 80px; color: #2f3542; letter-spacing: -0.05em;
+}
+footer .glo-con h2 > strong{
+   font-weight: 900; margin-left: 15px; color: #2f3542;
+}
+footer .glo-con h2 small{
+  font-size: 36px; font-weight: 400; display: block; line-height: 43px; color: #57606f;
+}
+footer .glo-con h2 small:last-of-type{
+  margin-bottom: 15px;
+}
+footer .glo-con > p{
+  font-size: 60px;  font-weight: 900; margin-bottom: 268px; color: #2f3542;
+}
+footer .glo-con > div{
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+footer .glo-con > div address{
+  font-size: 24px; color: #2f3542; font-weight: 600;
+}
+footer .glo-con > div address span{
+  margin-top: 20px;
+}
+footer .glo-con > div address > *{
+  font-size: 16px; display: block; font-weight: 400; line-height: 22px; color: #57606f;
+  font-style: normal;
+}
+footer .glo-con > div address a:hover{
+  font-weight: 400; color: #2f3542;
+}

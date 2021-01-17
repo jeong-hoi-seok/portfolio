@@ -1,0 +1,769 @@
+
+.about .glo-con h2{
+    font-size: 48px; font-weight: 400; text-transform: capitalize; margin-bottom: 62px;
+    /* position: absolute; top: 0; left: 0; */
+}
+.about .glo-con figure::after{
+    display: block; visibility: hidden; content: ''; clear: both;
+}
+.about .glo-con figure img{
+    float: left; margin-right: 80px;
+}
+.about .glo-con figure{
+    margin-bottom: 50px;
+}
+.about .glo-con figure figcaption dl dt{
+    font-size: 14px; font-weight: 400; color: #2f3542; margin-bottom: 13px;
+}
+.about .glo-con figure figcaption dl dd:first-of-type{
+    font-size: 34px; font-weight: 400; color: #2f3542; margin-bottom: 45px;
+}
+.about .glo-con figure figcaption dl dd:first-of-type strong{
+     font-weight: 900; letter-spacing: -0.025em;
+}
+/* .about .glo-con figure figcaption dl hr{
+    width: 25px; color: #2f3542;
+} */
+.about .glo-con figure figcaption dl dd:last-of-type{
+    font-size: 14px; color: #57606f; font-weight: 400; line-height: 16px;
+}
+.about .glo-con > ul{
+    display: flex; margin-bottom: 55px; justify-content: space-between;
+}
+.about .glo-con ul li{
+    list-style: none;
+}
+.about .glo-con ul li span,
+.about .glo-con ul li time,
+.about .glo-con ul li address,
+.about .glo-con ul li address a,
+.about .glo-con ul li p{
+    font-size: 16px; font-weight: 400; display: block; line-height: 22px; color: #57606f;
+}
+.about .glo-con ul li address{
+    font-style: normal;
+}
+.about .glo-con > div > ul{
+    display: flex;
+}
+.about .glo-con > ul li h3,
+.about .glo-con > div h3{
+    font-size: 24px; font-weight: 900; color: #2f3542; text-transform: capitalize;
+    margin-bottom: 32px;
+}
+.about .glo-con > div ul li{
+    transition: all 0.35s;
+}
+.about .glo-con > div ul li:not(:last-of-type){
+    margin-right: 20px;
+}
+.about .glo-con > div ul li:hover{
+    transform: translateY(-20px);
+}
+/* about */
+
+.about-detail .glo-con h2{
+    font-size: 48px; font-weight: 400; text-transform: capitalize; margin-bottom: 62px;
+}
+.about-detail .glo-con .flex-con{
+    display: flex; padding: 0 30px; justify-content: space-between;
+}
+.about-detail .glo-con .flex-con figure{
+    width: 320px;
+}
+.about-detail .glo-con .flex-con figure img{
+    width: 100%; margin-bottom: 36px;
+}
+.about-detail .glo-con .flex-con figure figcaption dl{
+    text-align: center;
+}
+.about-detail .glo-con .flex-con figure figcaption dl dt{
+    margin-bottom: 38px;
+}
+.about-detail .glo-con .flex-con figure figcaption dl dt q{
+    font-size: 34px;  font-weight: 900; color: #2f3542;
+}
+.about-detail .glo-con .flex-con figure figcaption dl dd{
+    font-weight: 400; font-size: 16px; color: #2f3542; padding: 0 20px; line-height: 20px;
+}
+/* about detail */
+
+.moviepr{
+    background: url('../images/pr-bg01.png') no-repeat center #1b1b1e; 
+}
+.moviepr .glo-con h2{
+    font-size: 96px;  font-weight: 900; text-transform: capitalize; color: #fff;
+    margin-bottom: 36px; padding-top: 157px;
+}
+.moviepr .glo-con span::before{
+    content: ':'; font-weight: 400; margin-right: 12px;
+}
+.moviepr .glo-con span{
+    font-size: 36px; font-weight: 600; color: #dfe4ea;
+}
+.moviepr .glo-con hr{
+    border-color: #fff; width: 45px; margin: 108px 0;
+}
+.moviepr .glo-con p{
+    font-size: 16px; font-weight: 400; color: #dfe4ea;
+}
+
+.tenet .glo-con h2{
+    font-size: 34px; font-weight: 400; margin-bottom: 27px;
+}
+.tenet > div::after{
+    display: block; visibility: hidden; clear: both; content: '';
+}
+.tenet .glo-con > div:first-of-type{
+    float: left; width: 367px; margin-right: 90px;
+}
+.tenet .glo-con > div:last-of-type{
+    float: right;
+}
+.tenet .glo-con > div:first-of-type span{
+    display: block; font-size: 16px; font-weight: 400; margin-bottom: 60px;
+}
+.tenet .glo-con > div:first-of-type h3{
+    font-size: 24px; font-weight: 400; text-transform: capitalize; margin-bottom: 10px;
+}
+.tenet .glo-con > div:first-of-type > div{
+    display: inline-block; width: 110px; height: 40px;
+    text-align: center; vertical-align: middle; line-height: 40px;; margin-bottom: 30px;
+}
+.tenet .glo-con > div:first-of-type > div a{
+    display: inline-block; width: 100%; height: 100%; color: #2f3542; font-size: 14px;
+    border: 1px solid #2f3542;
+}
+.tenet .glo-con > div:first-of-type > div:hover a{
+    color: #fff; background-color: #2f3542; border: none;
+}
+.tenet .glo-con > div:first-of-type p,
+.tenet .glo-con > div:first-of-type dl dt,
+.tenet .glo-con > div:first-of-type dl dd{
+    font-size: 14px; font-weight: 400; color: #2f3542;
+}
+.tenet .glo-con > div:first-of-type p{
+    margin-bottom: 15px; line-height: 18px;
+}
+.tenet .glo-con > div:first-of-type ul{
+    margin-bottom: 45px; line-height: 18px;
+}
+.tenet .glo-con > div:first-of-type dl{
+    margin-bottom: 10px;
+}
+.tenet .glo-con > div:first-of-type dl dt{
+    margin-bottom: 5px;
+}
+.tenet .glo-con > div:first-of-type dl dd{
+    margin-left: 5px;
+}
+.tenet .glo-con > div:first-of-type dl dd::before{
+    content: '-'; margin-right: 5px;
+}
+.tenet .glo-con > div:first-of-type dl:last-of-type{
+    margin-bottom: 45px;
+}
+.tenet .glo-con > div:first-of-type .color-box{
+    display: flex;
+}
+.tenet .glo-con > div:first-of-type .color-box li{
+    width: 50px; height: 50px; display: block;
+}
+.tenet .glo-con > div:first-of-type .color-box li:not(:last-of-type){
+    margin-right: 20px;
+}
+.tenet .glo-con > div:first-of-type .color-box li:nth-of-type(1){
+    background-color: black;
+}
+.tenet .glo-con > div:first-of-type .color-box li:nth-of-type(2){
+    background-color: #585858;
+}
+.tenet .glo-con > div:first-of-type .color-box li:nth-of-type(3){
+    background-color: #c2c2c2;
+}
+.tenet .glo-con > div:first-of-type .color-box li:nth-of-type(4){
+    background-color: #7c1618;
+}
+
+.tenet .glo-con > div:first-of-type ul:last-of-type{
+    display: flex;
+}
+.tenet .glo-con > div:first-of-type ul:last-of-type li{
+    display: inline-block; width: 110px; height: 40px;
+    text-align: center; vertical-align: middle; line-height: 40px;
+}
+.tenet .glo-con > div:first-of-type ul:last-of-type li a{
+    display: inline-block; width: 100%; height: 100%; color: #2f3542; font-size: 14px;
+    border: 1px solid #2f3542;
+}
+.tenet .glo-con > div:first-of-type ul:last-of-type li:hover a{
+    background-color: #2f3542; color: #fff; font-weight: 400;
+    border: none;
+}
+.tenet .glo-con > div:first-of-type ul:last-of-type li:not(:last-of-type){
+    margin-right: 17px;
+}
+
+.renewal{
+    background-color: #e67e22;
+}
+.renewal .glo-con{
+    position: relative;
+}
+.renewal .glo-con h2{
+    font-size: 96px;  font-weight: 900; text-transform: capitalize; color: #fff;
+    margin-bottom: 36px; padding-top: 157px;
+}
+.renewal .glo-con span::before{
+    content: ':'; font-weight: 400; margin-right: 12px;
+}
+.renewal .glo-con span{
+    font-size: 36px; font-weight: 600; color: #fff; opacity: 0.8;
+}
+.renewal .glo-con hr{
+    border-color: #fff; width: 45px; margin: 108px 0;
+}
+.renewal .glo-con p{
+    font-size: 16px; font-weight: 400; color: #fff; opacity: 0.6;
+}
+.renewal .glo-con img{
+    position: absolute; bottom: 10%; right: 4%;
+    transform: scale(0.9);
+}
+
+.cookat .glo-con h2{
+    font-size: 34px; font-weight: 400; margin-bottom: 27px;
+}
+.cookat > div::after{
+    display: block; visibility: hidden; clear: both; content: '';
+}
+.cookat .glo-con > div:first-of-type{
+    float: left; width: 367px; margin-right: 90px;
+}
+.cookat .glo-con > div:last-of-type{
+    float: right;
+}
+.cookat .glo-con > div:first-of-type span{
+    display: block; font-size: 16px; font-weight: 400; margin-bottom: 60px;
+}
+.cookat .glo-con > div:first-of-type h3{
+    font-size: 24px; font-weight: 400; text-transform: capitalize; margin-bottom: 10px;
+}
+.cookat .glo-con > div:first-of-type > div{
+    display: inline-block; width: 110px; height: 40px;
+    text-align: center; vertical-align: middle; line-height: 40px;; margin-bottom: 30px;
+}
+.cookat .glo-con > div:first-of-type > div a{
+    display: inline-block; width: 100%; height: 100%; color: #2f3542; font-size: 14px;
+    border: 1px solid #2f3542;
+}
+.cookat .glo-con > div:first-of-type > div:hover a{
+    color: #fff; background-color: #2f3542; border: none;
+}
+.cookat .glo-con > div:first-of-type p,
+.cookat .glo-con > div:first-of-type dl dt,
+.cookat .glo-con > div:first-of-type dl dd{
+    font-size: 14px; font-weight: 400; color: #2f3542;
+}
+.cookat .glo-con > div:first-of-type p{
+    margin-bottom: 15px; line-height: 18px;
+}
+.cookat .glo-con > div:first-of-type ul{
+    margin-bottom: 45px; line-height: 18px;
+}
+.cookat .glo-con > div:first-of-type dl{
+    margin-bottom: 10px;
+}
+.cookat .glo-con > div:first-of-type dl dt{
+    margin-bottom: 5px;
+}
+.cookat .glo-con > div:first-of-type dl dd{
+    margin-left: 5px;
+}
+.cookat .glo-con > div:first-of-type dl dd::before{
+    content: '-'; margin-right: 5px;
+}
+.cookat .glo-con > div:first-of-type dl{
+    margin-bottom: 75px;
+}
+.cookat .glo-con > div:first-of-type .color-box{
+    display: flex;
+}
+.cookat .glo-con > div:first-of-type .color-box li{
+    width: 50px; height: 50px; display: block;
+}
+.cookat .glo-con > div:first-of-type .color-box li:not(:last-of-type){
+    margin-right: 20px;
+}
+.cookat .glo-con > div:first-of-type .color-box li:nth-of-type(1){
+    background-color: #333333;
+}
+.cookat .glo-con > div:first-of-type .color-box li:nth-of-type(2){
+    background-color: #545454;
+}
+.cookat .glo-con > div:first-of-type .color-box li:nth-of-type(3){
+    background-color: #e5e5e5;
+}
+.cookat .glo-con > div:first-of-type .color-box li:nth-of-type(4){
+    background-color: #eeeeee;
+}
+.cookat .glo-con > div:first-of-type .color-box li:nth-of-type(5){
+    background-color: #eb5500;
+}
+
+
+.cookat .glo-con > div:first-of-type ul:last-of-type li{
+    display: inline-block; width: 110px; height: 40px;
+    text-align: center; vertical-align: middle; line-height: 40px;
+}
+.cookat .glo-con > div:first-of-type ul:last-of-type li a{
+    display: inline-block; width: 100%; height: 100%; color: #2f3542; font-size: 14px;
+    border: 1px solid #2f3542;
+}
+.cookat .glo-con > div:first-of-type ul:last-of-type li:hover a{
+    background-color: #2f3542; color: #fff; font-weight: 400; border: none;
+}
+
+
+.otherDesign-overlay{
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);
+    position: fixed; top: 0; left: 0; display: none;
+}
+.otherDesign{
+    background-color: #f1f2f6; position: relative;
+}
+.otherDesign .glo-con h2{
+    /* display: none; */
+    font-size: 48px; font-weight: 400; text-transform: capitalize; margin-bottom: 62px;
+}
+.otherDesign .glo-con > ul > li{
+    display: block; cursor: pointer;
+}
+.otherDesign .glo-con > ul > li:first-of-type{
+    width: 580px; height: 580px; background-color: #333333; float: left;
+}
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type{
+    display: flex; flex-wrap: wrap; flex-direction: row;
+}
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li{
+    margin-left: 20px; width: 280px; height: 280px; list-style: none;
+    
+}
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li:nth-of-type(1),
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li:nth-of-type(2){
+    margin-bottom: 20px;
+}
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li:nth-of-type(2) img{
+    width: 100%;
+}
+.imgshow{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    overflow: hidden; background: #fff; z-index: 100; display: none;
+}
+.popup{
+    line-height: 0;
+}
+.otherDesign .glo-con > ul > li:first-of-type .popup .overlay{
+    background-color: #2f3542;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con{
+    position: relative; overflow: hidden;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con img,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con img{
+    transition: all 0.5s;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con:hover img,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con:hover img{
+    transform: scale(1.2);
+}
+
+.otherDesign .glo-con > ul > li:first-of-type .img-con > div,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con > div{
+    position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.7);
+    width: 100%; height: 100%; transition: all 0.5s;;
+    opacity: 0;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con:hover > div,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con:hover > div{
+    opacity: 1;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con:hover > div p,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con:hover > div p{
+    opacity: 1; color: #fff;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con > div p,
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con > div p{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    color: #eee; opacity: 0; transition: all 0.5s; width: 100%; text-align: center;
+}
+.otherDesign .glo-con > ul > li:first-of-type .img-con > div p{
+    font-size: 24px;
+}
+.otherDesign .glo-con > ul > li:last-of-type ul:last-of-type li .img-con > div p{
+    font-size: 18px;
+}
+
+
+
+/* main css */
+
+#t-c-header{
+    background: url('../images/t-c-h1-bg.png') center top no-repeat;
+    padding: 155px 0 180px 0;
+}
+#t-c-header h1{
+    margin-bottom: 104px;
+}
+#t-c-header h2{
+    position: absolute; top: 225px; left: 50%; transform: translateX(-50%);
+}
+#t-c-header h3{
+    color: #fff; font-size: 16px; font-weight: 400;
+    margin-bottom: 104px;
+}
+#t-c-header p{
+    font-size: 16px; font-weight: 400; line-height: 19px;
+}
+#t-c-concept{
+    padding-bottom: 70px; border-bottom: 1px solid #f1f2f6;
+}
+#t-c-concept h2{
+    font-size: 36px; font-weight: 400; margin-bottom: 45px;
+}
+#t-c-concept > div:first-of-type{
+    background-color: #f1f2f6; padding: 35px 0 83px 0; margin-bottom: 70px;
+}
+#t-c-concept h3{
+    font-size: 18px; font-weight: 400; margin-bottom: 70px;
+}
+#t-c-concept > div > div{
+    display: flex; justify-content: center; align-items: center;
+}
+#t-c-concept > div > div h4{
+    font-size: 36px;  font-weight: 900; margin-right: 80px;
+}
+#t-c-concept > div > div blockquote{
+    font-size: 14px; font-weight: 400; line-height: 17px; width: 350px;
+    text-align: left;
+}
+#t-c-concept > div > div img{
+    margin-right: 70px;
+}
+
+#t-c-concept > div:last-of-type{
+    display: flex; position: relative; padding: 0 180px;
+}
+#t-c-concept > div:last-of-type > div:not(:nth-of-type(3)){
+    width: 180px; background-color: #1e1e1e; border-radius: 90px;
+}
+#t-c-concept > div:last-of-type > div:first-of-type{
+    opacity: 0.5;
+}
+#t-c-concept > div:last-of-type > div:first-of-type > p,
+#t-c-concept > div:last-of-type > div:nth-of-type(2) > p{
+    line-height: 180px; color: #fff;
+    font-size: 14px; font-weight: 400;
+}
+#t-c-concept > div:last-of-type > div:nth-of-type(2){
+    opacity: 0.2;
+}
+#t-c-concept > div:last-of-type > div:nth-of-type(3){
+    line-height: 180px;
+}
+#t-c-concept > div:last-of-type > div:nth-of-type(3) > img{
+    margin: 0 27px;
+}
+#t-c-concept > div:last-of-type > div:first-of-type{
+    margin-right: 65px;
+}
+#t-c-concept > div:last-of-type > div:last-of-type{
+    position: absolute; right: 273px; opacity: 0.5; top: 0; height: 180px;
+}
+#t-c-concept > div:last-of-type > div:nth-of-type(4){
+    opacity: 0.2; position: absolute; right: 180px; height: 180px;
+}
+#t-c-concept > p{
+    margin-top: 55px; font-weight: 400; line-height: 20px;
+}
+
+#t-c-style-guide{
+    padding: 110px 0 180px 0;
+}
+#t-c-style-guide h2{
+    font-size: 36px; font-weight: 400; margin-bottom: 45px;
+}
+#t-c-style-guide h3{
+    font-size: 18px; font-weight: 400; margin-bottom: 70px;
+}
+#t-c-style-guide > ul:first-of-type{
+    padding: 0 300px; margin-bottom: 140px;
+}
+#t-c-style-guide > ul:first-of-type:after{
+    visibility: hidden; display: block; clear: both; content: '';
+}
+#t-c-style-guide > ul:first-of-type li{
+    list-style: none; text-align: left;
+}
+#t-c-style-guide > ul:first-of-type li:first-of-type{
+    float: left;
+}
+#t-c-style-guide > ul:first-of-type li:last-of-type{
+    float: right;
+}
+#t-c-style-guide > ul:first-of-type li h4{
+    margin-bottom: 15px;
+}
+#t-c-style-guide .color-box{
+    display: flex; justify-content: center; margin-bottom: 140px;
+}
+#t-c-style-guide .color-box li{
+    list-style: none;
+}
+#t-c-style-guide .color-box li:not(:last-of-type){
+    margin-right: 20px;
+}
+#t-c-style-guide .color-box li > div{
+    width: 180px; height: 30px; margin-bottom: 13px;
+}
+#t-c-style-guide .color-box li > span{
+    text-align: left; display: block;
+    font-size: 14px; font-weight: 400;
+}
+#t-c-style-guide .color-box li:nth-of-type(1) > div{
+    background-color: #000000;
+}
+#t-c-style-guide .color-box li:nth-of-type(2) > div{
+    background-color: #585858;
+}
+#t-c-style-guide .color-box li:nth-of-type(3) > div{
+    background-color: #c2c2c2;
+}
+#t-c-style-guide .color-box li:nth-of-type(4) > div{
+    background-color: #7c1618;
+}
+#t-c-style-guide > div{
+    display: flex; align-items: flex-start; padding: 0 100px; justify-content: space-between;
+}
+#t-c-style-guide > div > div ul{
+    display: flex; justify-content: space-between;
+}
+#t-c-style-guide > div > div ul li{
+    display: inline-block; width: 80px; height: 35px; border: 1px solid #2f3542;
+    font-size: 12px; cursor: pointer; line-height: 35px;
+}
+#t-c-style-guide > div > div ul li:hover,
+#t-c-style-guide > div > div ul li.btn-active{
+    border: none; color: #fff; background-color: #2f3542;
+}
+#t-c-style-guide > div > div ul{
+    margin-bottom: 40px;
+}
+#t-c-style-guide > div .column-text{
+    width: 300px;
+}
+#t-c-style-guide > div .column-text dl{
+    margin-bottom: 5px;
+}
+#t-c-style-guide > div .column-text dl > *{
+    display: inline-block;
+}
+#t-c-style-guide > div .column-text dl::after{
+    display: block; visibility: hidden; clear: both; content: '';
+}
+#t-c-style-guide > div .column-text dl dt{
+    float: left; font-weight: 400;
+}
+#t-c-style-guide > div .column-text dl dd{
+    float: right; font-weight: 400;
+}
+#t-c-style-guide > div:last-of-type img{
+    display: none;
+}
+#t-c-style-guide > div:last-of-type img.visible{
+    display: block;
+}
+
+
+#t-c-full-veiw h2{
+    font-size: 36px; font-weight: 400; margin-bottom: 95px;
+}
+#t-c-full-veiw > img{
+    display: block; margin: 0 auto;
+}
+
+#t-c-footer {
+    padding: 140px 0;
+}
+#t-c-footer hr {
+    width: 40px; margin: 0 auto; margin-bottom: 85px;
+}
+#t-c-footer h2{
+    font-size: 36px; font-weight: 400;
+}
+#t-c-footer span:first-of-type{
+    display: block;
+    font-size: 24px; font-weight: 400; margin-bottom: 100px;
+}
+#t-c-footer p:first-of-type{
+    font-size: 36px; font-weight: 400; margin-bottom: 10px;
+}
+#t-c-footer p:last-of-type{
+    font-size: 48px; font-weight: 400; margin-bottom: 45px;
+}
+#t-c-footer span:last-of-type{
+    font-size: 48px;  font-weight: 900;
+}
+
+/* 테넷 컨셉 서브페이지 css */
+
+#c-c-header{
+    background: url('../images/c-c-header-bg.png') center top no-repeat;
+    padding-top: 175px;
+}
+#c-c-header h1{
+    margin-bottom: 30px;
+}
+#c-c-header h2{
+    margin-bottom: 75px;
+}
+#c-c-header h3{
+    font-size: 16px; font-weight: 400; color: #fff; margin-bottom: 80px;
+}
+
+#c-c-intro{
+    background: url('../images/c-c-intro-bg.png') no-repeat;
+    padding: 134px 0; margin-bottom: 145px;
+    display: flex; justify-content: center; align-items: center;
+}
+#c-c-intro h2{
+    font-size: 36px;  font-weight: 900; color: #eb5500;
+}
+#c-c-intro > img{
+    margin: 0 99px;
+}
+#c-c-intro p{
+    font-size: 16px; font-weight: 400; color: #fff; opacity: 0.8;
+    width: 465px; text-align: left; line-height: 21px;
+}
+
+#c-c-concept{
+    padding: 0 200px;
+}
+#c-c-concept h2{
+    font-size: 36px; font-weight: 400; margin-bottom: 70px;
+}
+#c-c-concept h3{
+    font-size: 18px; font-weight: 400; margin-bottom: 70px;
+}
+#c-c-concept ol{
+    margin-bottom: 70px; padding: 0 80px;
+    counter-reset: section;
+}#c-c-concept ol li{
+    list-style: none; margin-bottom: 20px; display: flex; justify-content: center;
+}
+#c-c-concept ol li h4::before{
+    font-size: 12px;  font-weight: 900; margin-right: 8px;
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero);
+}
+#c-c-concept ol li h4{
+    font-size: 16px;  font-weight: 900; text-align: left; margin-right: 60px;
+    color: #2f3542;
+}
+#c-c-concept ol li > p{
+    font-size: 16px; font-weight: 400; width: 500px; text-align: left;
+    line-height: 20px; color: #57606f;
+}
+#c-c-concept > div{
+    margin-bottom: 140px; display: flex; justify-content: space-between;
+}
+#c-c-concept > div > div{
+    width: 180px; height: 180px; border: 1px solid #2f3542; border-radius: 90px;
+    line-height: 180px;
+}
+
+#c-c-style-guide h2{
+    font-size: 36px; font-weight: 400; margin-bottom: 70px;
+}
+#c-c-style-guide h3{
+    font-size: 18px; font-weight: 400; margin-bottom: 70px;
+}
+#c-c-style-guide p{
+    font-weight: 400; margin: 70px auto; width: 730px;
+}
+#c-c-style-guide hr{
+    width: 40px; margin: 0 auto; margin-bottom: 70px;
+}
+#c-c-style-guide > div{
+    width: 200px; margin: 0 auto 140px auto;
+}
+#c-c-style-guide > div h4{
+    text-align: left; font-size: 14px; font-weight: 400; margin-bottom: 15px;
+}
+#c-c-style-guide .color-box{
+    padding: 0 200px 70px 200px; margin-bottom: 70px;
+    display: flex; justify-content: space-between;
+}
+#c-c-style-guide .color-box li{
+    list-style: none;
+}
+#c-c-style-guide .color-box li > div{
+    width: 144px; height: 30px; 
+    margin-bottom: 15px;
+}
+#c-c-style-guide .color-box li:nth-of-type(1) > div{
+    background-color: #000;
+}
+#c-c-style-guide .color-box li:nth-of-type(2) > div{
+    background-color: #333;
+}
+#c-c-style-guide .color-box li:nth-of-type(3) > div{
+    background-color: #e5e5e5;
+}
+#c-c-style-guide .color-box li:nth-of-type(4) > div{
+    background-color: #eee;
+}
+#c-c-style-guide .color-box li:nth-of-type(5) > div{
+    background-color: #eb5500;
+}
+#c-c-style-guide .color-box li > span{
+    display: block; text-align: left;
+}
+
+
+
+
+
+
+
+#c-c-full-veiw h2{
+    font-size: 36px; font-weight: 400; margin-bottom: 95px;
+}
+#c-c-full-veiw > img{
+    display: block; margin: 0 auto;
+}
+
+#c-c-footer {
+    padding: 140px 0;
+}
+#c-c-footer hr {
+    width: 40px; margin: 0 auto; margin-bottom: 85px;
+}
+#c-c-footer h2{
+    font-size: 36px; font-weight: 400;
+}
+#c-c-footer span:first-of-type{
+    display: block;
+    font-size: 24px; font-weight: 400; margin-bottom: 100px;
+}
+#c-c-footer p:first-of-type{
+    font-size: 36px; font-weight: 400; margin-bottom: 10px;
+}
+#c-c-footer p:last-of-type{
+    font-size: 48px; font-weight: 400; margin-bottom: 45px;
+}
+#c-c-footer span:last-of-type{
+    font-size: 48px;  font-weight: 900;
+}
