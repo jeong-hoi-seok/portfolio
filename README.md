@@ -2,5 +2,5 @@
   <h1>Portfolio</h1>
 </div>
 
-## Technology
+## Technology Stack
 
