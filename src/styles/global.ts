@@ -81,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
         outline: 0;
         vertical-align: baseline;
         background: transparent;
-        color: #333;
+        color: #282830;
     }
 
     html {
@@ -166,11 +166,46 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
-    input,
-    select {
-        border: none;
-        padding: 0;
-        vertical-align: middle;
+    address {
+        font-style: normal;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.05rem;
+    }
+    h2 {
+        font-size: 3.75rem;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.025rem;
+    }
+    h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    h4 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    h5 {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    h6 {
+        font-size: 1.3125rem;
+        line-height: 1.1;
+    }
+    p {
+        word-break: break-all;
+        line-height: 1.2;
+    }
+    span {
+        line-height: 1.2;
     }
 
     button {
@@ -178,15 +213,22 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         border: none;
         outline: none;
-        cursor: pointer;
-        line-height: 1;
         font-size: 1rem;
-        color: #fff;
         background-color: transparent;
+        cursor: pointer;
     }
-
-    address {
-        font-style: normal;
+    input,
+    select {
+        font-size: 1rem;
+        border: none;
+        padding: 0;
+        vertical-align: middle;
+    }
+    input::placeholder {
+        font-size: inherit;
+    }
+    textarea {
+        font-size: 1rem;
     }
 `;
 
