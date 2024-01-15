@@ -1,10 +1,6 @@
-<div align="center">
-  <h1>Portfolio</h1>
-</div>
+## 나만의 포트폴리오
 
-react를 기반으로 만든 저의 포트폴리오 입니다.
-
-## Technology Stack
-
-- React
-- styled component
+### 기술 스택
+- react.v18 이상
+- next.v14 이상
+- type script
