@@ -3,4 +3,5 @@
 ### 기술 스택
 - react.v18 이상
 - next.v14 이상
-- type script
+- TypeScript
+- styled-components
