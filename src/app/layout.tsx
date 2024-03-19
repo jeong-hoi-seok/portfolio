@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../styles/globals.css';
 
 export const metadata: Metadata = {
     title: '정회석 포트폴리오',
@@ -11,7 +11,9 @@ const RootLayout = ({children}: Readonly<{children: React.ReactNode;}>) =>
     return (
         <html lang="ko">
             <body>
-                {children}
+                <main>
+                    {children}
+                </main>
             </body>
         </html>
     );

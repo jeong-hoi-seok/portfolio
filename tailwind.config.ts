@@ -8,10 +8,17 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            fontFamily: {
+                sans: ['Pretendard', 'ui-sans-serif', 'system-ui'],
+            },
+            keyframes: {
+                'show-blur': {
+                    '0%': { filter:'blur(5px)', opacity:'0' },
+                    '100%': { filter:'blur(0px)', opacity:'1' },
+                },
+            },
+            animation: {
+                'show-blur': 'show-blur 0.7s linear forwards',
             },
         },
     },
