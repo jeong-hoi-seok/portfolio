@@ -3,7 +3,7 @@
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
+        "source.fixAll.eslint": true
     },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.tabSize": 4
