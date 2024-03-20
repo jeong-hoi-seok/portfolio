@@ -18,6 +18,8 @@ const DustEffect = () =>
         dx!: number;
         dy!: number;
         size!: number;
+        alpha!: number;
+        dalpha!: number;
         canvas: HTMLCanvasElement;
         ctx: CanvasRenderingContext2D | null;
         constructor(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D | null)
@@ -29,13 +31,15 @@ const DustEffect = () =>
         reset()
         {
             const angle = Math.random() * Math.PI * 2; //0~360도
-            const speed = getRandom(0.3, 1);
+            const speed = getRandom(0.2, 0.8);
             //init
             this.ctx?.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.x = getRandom(0, this.canvas.width);
             this.y = getRandom(0, this.canvas.height);
+            this.alpha = getRandom(0, 1);
             this.dx = Math.cos(angle) * speed;
             this.dy = Math.sin(angle) * speed;
+            this.dalpha = 0.1;
             this.size = getRandom(0.8, 1);
         }
         draw()
@@ -44,7 +48,7 @@ const DustEffect = () =>
             {
                 this.ctx.beginPath();
                 this.ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-                this.ctx.fillStyle = 'rgba(255,255,255)';
+                this.ctx.fillStyle = `rgba(255,255,255,${this.alpha})`;
                 this.ctx.fill();
                 this.ctx.closePath();
             }
@@ -54,10 +58,14 @@ const DustEffect = () =>
             this.x += this.dx;
             this.y += this.dy;
 
+            if (this.alpha < 1)
+            {
+                this.alpha += this.dalpha;
+            }
+
             if (this.x <= 0 || this.x >= this.canvas.width || this.y <= 0 || this.y >= this.canvas.height) 
             {
-                this.dx = 0;
-                this.dy = 0;
+                this.reset();
             }
         }
     }
