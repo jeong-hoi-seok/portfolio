@@ -1,8 +1,9 @@
 'use client';
-import React, { useCallback } from 'react';
+import React from 'react';
 
 interface IScrollAnimationProps extends React.HTMLAttributes<HTMLDivElement> {
     threshold?: number;
+    delay?: number;
     children?: React.ReactNode;
 }
 
@@ -11,25 +12,31 @@ const ScrollAnimation: React.FC<IScrollAnimationProps> = (props) =>
     const {
         className,
         threshold = 0.8,
+        delay = 0,
         children,
         ...rest
     } = props;
     //ref
     const dom = React.useRef<HTMLDivElement | null>(null);
+    const [focus, setFocus] = React.useState<boolean | null>(false);
 
-    const observerEvent: IntersectionObserverCallback = useCallback((entrise) => 
+    const observerEvent: IntersectionObserverCallback = React.useCallback((entrise) => 
     {
         entrise.forEach(entry => 
         {
             if(entry.isIntersecting)
             {
-                if(dom.current)
+                setTimeout(() => 
                 {
-                    dom.current.classList.add('scroll-animation-fade-up-visible');
-                }
+                    if(dom.current)
+                    {
+                        setFocus(true);
+                        dom.current.classList.add('scroll-animation-fade-up-visible');
+                    }
+                }, delay);
             }
         });
-    }, []);
+    }, [delay]);
 
     React.useEffect(() => 
     {
@@ -51,9 +58,19 @@ const ScrollAnimation: React.FC<IScrollAnimationProps> = (props) =>
         <div
             {...rest}
             ref={dom}
-            className={`scroll-animation-fade-up ${className || ''}`}
+            className={`relative scroll-animation-fade-up ${className || ''}`}
         >
-            {children && children}
+            {
+                focus &&
+                    <div className='absolute top-0'>
+                        {children}
+                    </div>
+            }
+            {
+                <div className='opacity-0'>
+                    {(children) && children}
+                </div>
+            }
         </div>
     );
 };

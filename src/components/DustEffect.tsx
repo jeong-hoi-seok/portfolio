@@ -6,7 +6,7 @@ const getRandom = (min: number, max: number) =>
     return Math.round(Math.random() * (max - min)) + min;
 };
 
-interface IDustEffectProps {
+interface IDustEffectProps extends React.CanvasHTMLAttributes<HTMLCanvasElement> {
     particle?: number;
     particleRGB?: string;
     particleAlpha?: number;
@@ -30,6 +30,7 @@ const DustEffect = (props: IDustEffectProps) =>
         MaxSpeed = 1000, //ms
         MinSpeed = 100, //ms
         className = 'h-full w-full',
+        ...rest
     } = props;
     //ref
     const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
@@ -155,6 +156,7 @@ const DustEffect = (props: IDustEffectProps) =>
 
     return (
         <canvas
+            {...rest}
             ref={canvasRef}
             className={className}
         />

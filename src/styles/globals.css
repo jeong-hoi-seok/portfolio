@@ -6,6 +6,8 @@
 
 :root {
     --easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);
+    --primary-background-color: #09090b;
+    --primary-text-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,14 +17,15 @@
 }
 
 body {
-    
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
+/* 커스텀 css는 이니셜을 앞에 붙이기 */
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
-
     .scroll-animation-fade-up {
         @apply opacity-0;
         @apply translate-y-4;
