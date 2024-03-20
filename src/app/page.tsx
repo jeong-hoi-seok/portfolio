@@ -1,13 +1,11 @@
 //componetns
-import CaseCadeText from '@/components/CaseCadeText';
+import DustEffect from '@/components/DustEffect';
 
 const Home = () => 
 {
     return (
-        <div>
-            <CaseCadeText
-                text={'Hello World'}
-            />
+        <div className='bg-green-950'>
+            <DustEffect/>
         </div>
     );
 };
