@@ -21,12 +21,12 @@ interface IDustEffectProps {
 const DustEffect = (props: IDustEffectProps) => 
 {
     const {
-        particle = 10,
-        particleRGB = '255,255,255',
-        particleAlpha = 1,
-        particleLimitAlpha = 1,
-        particleMaxSize = 1,
-        particleMinSize = 1,
+        particle = 10, //입자 수
+        particleRGB = '255,255,255', //입자 색상
+        particleAlpha = 1, //입자 투명도
+        particleLimitAlpha = 1, //입자 투명도 한계값
+        particleMaxSize = 1, //입자 최대 사이즈
+        particleMinSize = 1, //입자 최소 사이즈
         MaxSpeed = 1000, //ms
         MinSpeed = 100, //ms
         className = 'h-full w-full',
