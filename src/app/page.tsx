@@ -4,7 +4,7 @@ import DustEffect from '@/components/DustEffect';
 const Home = () => 
 {
     return (
-        <div className='bg-green-950'>
+        <div className='bg-slate-950'>
             <DustEffect/>
         </div>
     );

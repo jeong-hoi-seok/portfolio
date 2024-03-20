@@ -20,33 +20,32 @@ const DustEffect = () =>
         size!: number;
         canvas: HTMLCanvasElement;
         ctx: CanvasRenderingContext2D | null;
-        constructor(canvas: HTMLCanvasElement)
+        constructor(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D | null)
         {
             this.canvas = canvas;
-            this.ctx = canvas.getContext('2d');
+            this.ctx = ctx;
             this.reset();
         }
         reset()
         {
             const angle = Math.random() * Math.PI * 2; //0~360도
-            const speed = 2;
+            const speed = getRandom(0.3, 1);
             //init
+            this.ctx?.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.x = getRandom(0, this.canvas.width);
             this.y = getRandom(0, this.canvas.height);
             this.dx = Math.cos(angle) * speed;
             this.dy = Math.sin(angle) * speed;
-            this.size = getRandom(1, 2);
+            this.size = getRandom(0.8, 1);
         }
         draw()
         {
             if(this.ctx)
             {
-                // this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
                 this.ctx.beginPath();
                 this.ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
                 this.ctx.fillStyle = 'rgba(255,255,255)';
                 this.ctx.fill();
-                this.ctx.stroke();
                 this.ctx.closePath();
             }
         }
@@ -66,26 +65,34 @@ const DustEffect = () =>
     React.useLayoutEffect(() => 
     {
         const canvas = canvasRef.current;
+        const particles: CanvasEvent[] = [];
         if (canvas) 
         {
+            const ctx = canvas.getContext('2d');
             const rect = canvas.getBoundingClientRect();
             canvas.width = rect.width;
             canvas.height = rect.height;
 
-            const particle = [];
-
             for (let i = 0; i < 100; i++) 
             {
-                particle.push(new CanvasEvent(canvas));
+                particles.push(new CanvasEvent(canvas, ctx));
             }
 
-            console.log(particle);
-
-            for (let i = 0; i < particle.length; i++) 
+            const animate = () => 
             {
-                particle[i].draw();
-                
-            }
+                if (ctx) 
+                {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    particles.forEach((particle) => 
+                    {
+                        particle.update();
+                        particle.draw();
+                    });
+                    requestAnimationFrame(animate);
+                }
+            };
+
+            animate();
         }
     }, []);
 
