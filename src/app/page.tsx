@@ -1,26 +1,34 @@
 //componetns
 import DustEffect from '@/components/DustEffect';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import TextEffect from '@/components/TextEffect';
 
 const Home = () => 
 {
     return (
         <>
             <div
-                style={{
-                    background: 'radial-gradient(at center 0%, #1d192e, #09090b)',
-                }}
+                
             >
                 <DustEffect
                     particle={100}
                     MinSpeed={300}
+                    particleRGB='255,238,78'
                     particleMinSize={0.4}
                     particleMaxSize={0.9}
                 />
+                {/* <TextEffect
+                    text='가나다라마바사'
+                /> */}
+                <h1 className='text-3xl'>
+                    Hello, World
+                </h1>
             </div>
-            <div style={{height: '1000px', backgroundColor: '#09090b'}}>
+            <div style={{height: '1000px' }}>
                 <ScrollAnimation>
-                    <div className='w-96 h-96 bg-slate-800'/>
+                    {/* <TextEffect
+                        text='가나다라마바사'
+                    /> */}
                 </ScrollAnimation>
             </div>
         </>

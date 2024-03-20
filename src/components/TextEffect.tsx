@@ -1,16 +1,16 @@
 'use client';
 import React from 'react';
 
-interface ICaseCadeTextProps {
+interface ITextEffectProps {
     text?: string;
     delay?: number;
 }
 
-const CaseCadeText = (props: ICaseCadeTextProps) => 
+const TextEffect = (props: ITextEffectProps) => 
 {
     const {
-        text,
-        delay = 70,
+        text, //텍스트 값
+        delay = 70, //글자 하나의 딜레이 값
     } = props;
 
     return (
@@ -35,4 +35,4 @@ const CaseCadeText = (props: ICaseCadeTextProps) =>
     );
 };
 
-export default CaseCadeText;
+export default TextEffect;
