@@ -22,4 +22,14 @@ body {
     .text-balance {
         text-wrap: balance;
     }
+
+    .scroll-animation-fade-up {
+        @apply opacity-0;
+        @apply translate-y-4;
+        transition: opacity cubic-bezier(.33,1,.68,1) .6s, transform cubic-bezier(.33,1,.68,1) .8s;
+    }
+    .scroll-animation-fade-up-visible {
+        @apply opacity-100;
+        @apply translate-y-0;
+    }
 }
