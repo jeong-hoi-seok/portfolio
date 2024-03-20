@@ -5,7 +5,12 @@ const Home = () =>
 {
     return (
         <div className='bg-slate-950'>
-            <DustEffect/>
+            <DustEffect
+                particle={100}
+                MinSpeed={300}
+                particleMinSize={0.4}
+                particleMaxSize={0.8}
+            />
         </div>
     );
 };
