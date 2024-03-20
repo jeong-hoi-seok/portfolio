@@ -6,7 +6,7 @@ const Home = () =>
     return (
         <div className='bg-slate-950 h-full'
             style={{
-                background: 'linear-gradient(to top, #000 0%, #322235 100%)',
+                background: 'radial-gradient(at center 0%, #1d192e, #09090b)',
             }}
         >
             <DustEffect
