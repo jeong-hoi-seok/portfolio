@@ -8,6 +8,8 @@
     --easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);
     --primary-background-color: #09090b;
     --primary-text-color: #fff;
+    --scrollbar-color-track: #424242;
+    --scrollbar-color-thumb: #686868;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +21,13 @@
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+}
+
+@supports (scrollbar-width: auto)
+{
+    * {
+        scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+    }
 }
 
 /* 커스텀 css는 이니셜을 앞에 붙이기 */
@@ -34,5 +43,8 @@ body {
     .scroll-animation-fade-up-visible {
         @apply opacity-100;
         @apply translate-y-0;
+    }
+    .jhs-bg-gradient-to-r-glitter {
+        background: linear-gradient(to right,transparent 35%,rgba(255,255,255,.3) 70%,transparent 100%);
     }
 }
