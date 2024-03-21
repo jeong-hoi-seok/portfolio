@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Container from '@/components/layout/Container';
 import ScrollAnimation from '../ScrollAnimation';
 import TextEffect from '../TextEffect';
-import Skills from '../Skills';
+import Skills from '../skill/Skills';
 
 const About = () => 
 {
