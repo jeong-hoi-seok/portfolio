@@ -21,7 +21,7 @@ jobs:
       - name: Cache docker layers
         uses: actions/cache@v4
         with:
-          path: /tmp/.ildx-cache
+          path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ env.VERSION }}
           restore-keys: |
             ${{ runner.os }}-buildx-
@@ -51,5 +51,7 @@ jobs:
           password: ${{ secrets.G_TOKEN }}
       - name: Docker run
         run: |
-          docker stop ${{ env.NAME }} && docker rm ${{ env.NAME }} && docker rmi ${{ env.DOCKER_IMAGE }}:latest
-          docker run -d -p 80:3000 --name go_cicd --restart always ${{ env.DOCKER_IMAGE }}:latest
+          docker pull ${{ env.DOCKER_IMAGE }}:latest
+          docker stop ${{ env.NAME }} || true  # Avoid errors if the container doesn't exist
+          docker rm ${{ env.NAME }} || true  # Avoid errors if the container doesn't exist
+          docker run -d -p 80:3000 --name ${{ env.NAME }} --restart always ${{ env.DOCKER_IMAGE }}:latest
