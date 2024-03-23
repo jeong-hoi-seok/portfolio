@@ -3,6 +3,7 @@ import React from 'react';
 //section
 import Intro from '@/components/section/Intro';
 import About from '@/components/section/About';
+import Projects from '@/components/section/Projects';
 //components
 import DustEffect from '@/components/DustEffect';
 
@@ -12,6 +13,7 @@ const Home = () =>
         <React.Fragment>
             <Intro/>
             <About/>
+            <Projects/>
             <DustEffect
                 particle={170}
                 MinSpeed={100}

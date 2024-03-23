@@ -62,7 +62,7 @@ const ScrollAnimation: React.FC<IScrollAnimationProps> = (props) =>
         >
             {
                 focus &&
-                    <div className='absolute top-0 w-full h-full'>
+                    <div className='absolute top-0 w-full h-fit'>
                         {children}
                     </div>
             }

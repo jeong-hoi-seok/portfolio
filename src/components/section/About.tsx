@@ -9,19 +9,10 @@ import Skills from '../skill/Skills';
 const About = () => 
 {
     return (
-        <Container className=''>
-            <ScrollAnimation
-                delay={250}
-            >
-                <h3 className='text-1xl font-bold mb-1'>
-                    About Me
-                </h3>
-            </ScrollAnimation>
-            <ScrollAnimation>
-                <h2 className='text-3xl'>
-                    저를 소개합니다!
-                </h2>
-            </ScrollAnimation>
+        <Container
+            title='저를 소개합니다!'
+            subTitle='About Me'
+        >
             <div className='grid grid-cols-12 gap-8'>
                 <div className='col-start-1 col-end-8'>
                     <div className='flex mt-12 gap-12'>
