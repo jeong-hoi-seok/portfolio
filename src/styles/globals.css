@@ -47,4 +47,15 @@ body {
     .jhs-bg-gradient-to-r-glitter {
         background: linear-gradient(to right,transparent 35%,rgba(255,255,255,.3) 70%,transparent 100%);
     }
+    .acrylic-box {
+        @apply border;
+        @apply rounded-lg;
+        @apply border-slate-50/10;
+        @apply bg-slate-50/5;
+        @apply after:absolute;
+        @apply after:h-px;
+        @apply after:top-0;
+        @apply after:w-full;
+        @apply after:jhs-bg-gradient-to-r-glitter;
+    }
 }
