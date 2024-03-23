@@ -14,10 +14,10 @@ const Skills = () =>
     return (
         <div className='relative h-96 rounded-lg border border-slate-50/10 bg-slate-50/5 after:absolute after:h-px after:top-0 after:w-full after:jhs-bg-gradient-to-r-glitter'>
             <Swiper
-                // autoplay={{
-                //     delay: 5000,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }}
                 modules={[Autoplay]}
                 className='h-full'
             >
