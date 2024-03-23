@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 //json
 import { skillData } from './skill';
 //swiper
@@ -13,10 +14,10 @@ const Skills = () =>
     return (
         <div className='relative h-96 rounded-lg border border-slate-50/10 bg-slate-50/5 after:absolute after:h-px after:top-0 after:w-full after:jhs-bg-gradient-to-r-glitter'>
             <Swiper
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 5000,
+                //     disableOnInteraction: false,
+                // }}
                 modules={[Autoplay]}
                 className='h-full'
             >
@@ -26,10 +27,23 @@ const Skills = () =>
                         return (
                             <SwiperSlide
                                 key={i}
+                                className='p-4'
                             >
-                                <div className='flex justify-center items-center h-full'>
-                                    {d.name}
-                                </div>
+                                <figure className='relative flex flex-col justify-center items-center h-full'>
+                                    <div className='relative flex justify-center items-center w-1/2 aspect-square min-w-14 min-h-14'>
+                                        {
+                                            d.logo &&
+                                                <Image
+                                                    src={d.logo}
+                                                    alt={d.name}
+                                                    fill
+                                                />
+                                        }
+                                    </div>
+                                    <figcaption className='absolute text-1xl top-0 left-0 text-zinc-400'>
+                                        {d.name}
+                                    </figcaption>
+                                </figure>
                             </SwiperSlide>
                         );
                     })
