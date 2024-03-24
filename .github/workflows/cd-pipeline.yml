@@ -31,6 +31,5 @@ jobs:
 
       - name: Deploy Docker Container
         run: |
-          docker stop ${{ env.NAME }} || true
-          docker rm ${{ env.NAME }} || true
+          docker image prune -a -f
           docker run -d -p 80:3000 --name ${{ env.NAME }} --restart always ${{ env.DOCKER_IMAGE }}:latest
