@@ -5,8 +5,29 @@ import Container from '@/components/layout/Container';
 //swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+
+const projects = [
+    {
+        project: 'media solution',
+    },
+    {
+        project: 'babayo',
+        thumbnail: '/images/project/babayo.jpg',
+    },
+    {
+        project: '블랙 클로버 모바일',
+        thumbnail: '/images/project/blackclover.png',
+    },
+    {
+        project: 'babayo',
+    },
+    {
+        project: 'babayo',
+    },
+    {
+        project: 'babayo',
+    },
+];
 
 const Projects = () => 
 {
@@ -15,27 +36,27 @@ const Projects = () =>
             title='프로젝트'
             subTitle='Projects'
         >
-            <Swiper
-                slidesPerView={3}
-                spaceBetween={16}
-                className='mt-8'
-                navigation={true}
-                modules={[Navigation]}
+            <div
+                className='columns-4 mt-8'
             >
                 {
-                    Array.from({length: 8}).map((_,i) => 
+                    projects.map((d,i) => 
                     {
                         return (
-                            <SwiperSlide
+                            <div
                                 key={i}
-                                className='relative aspect-[4/3] acrylic-box'
+                                className={'relative acrylic-box mb-4'}
                             >
-                                {i + 1}
-                            </SwiperSlide>
+                                {
+                                    d.thumbnail &&
+                                        <img src={d.thumbnail} alt="" />
+                                }
+                                {d.project}
+                            </div>
                         );
                     })
                 }
-            </Swiper>
+            </div>
         </Container>
     );
 };
