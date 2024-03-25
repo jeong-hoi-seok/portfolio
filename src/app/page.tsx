@@ -3,7 +3,7 @@ import React from 'react';
 //section
 import Intro from '@/components/section/Intro';
 import About from '@/components/section/About';
-import Projects from '@/components/section/Projects';
+import Projects from '@/components/section/projects';
 //components
 import DustEffect from '@/components/DustEffect';
 
