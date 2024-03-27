@@ -13,7 +13,7 @@ const Header = () =>
     React.useEffect(() => 
     {
         //socket init
-        const socket = io('ws://port-0-websocket-server-2scwz2alua1clyv.sel5.cloudtype.app/');
+        const socket = io('wss://port-0-websocket-server-2scwz2alua1clyv.sel5.cloudtype.app/');
         //socket event
         socket.on('connect', () => 
         {
