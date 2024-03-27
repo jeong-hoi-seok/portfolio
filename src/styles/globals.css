@@ -58,4 +58,8 @@ body {
         @apply after:w-full;
         @apply after:jhs-bg-gradient-to-r-glitter;
     }
+    .headerPrefixBox {
+        @apply w-[30px];
+        @apply h-[24px];
+    }
 }
