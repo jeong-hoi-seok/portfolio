@@ -15,7 +15,7 @@ const Skills = () =>
         <div className='relative h-96 acrylic-box'>
             <Swiper
                 autoplay={{
-                    delay: 5000,
+                    delay: 2000,
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}

@@ -32,6 +32,15 @@ body {
 
 /* 커스텀 css는 이니셜을 앞에 붙이기 */
 @layer utilities {
+    h1 {
+
+    }
+    h2 {
+        
+    }
+    h3 {
+        @apply text-xl;
+    }
     .text-balance {
         text-wrap: balance;
     }

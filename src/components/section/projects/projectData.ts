@@ -1,8 +1,8 @@
 export const projectData = [
     {
-        project: 'media solution',
+        project: 'Media Solution',
         thumbnail: '/images/project/mediasolution.png',
-        date: '2023.09 ~',
+        date: '2023.09 ~ 2024.03.29',
         description: '데이터 폼, 레이아웃을 동적으로 생성하고 관리하여 코딩 없이 웹사이트를 생성하는 SaaS 형태의 CMS 프로젝트입니다.',
         skills: [
             'typescript',
@@ -92,7 +92,6 @@ export const projectData = [
     },
     {
         project: '리모트 셀피',
-        thumbnail: '/images/project/blackclover.png',
         date: '2021.11 ~ 2021.12',
         description: '고정형 카메라를 통한 셀프 촬영 웹앱의 퍼블리싱 및 프론트엔드를 담당하였습니다.',
         skills: [
@@ -107,7 +106,6 @@ export const projectData = [
     },
     {
         project: 'K-Travelog',
-        thumbnail: '/images/project/blackclover.png',
         date: '2021.08 ~ 2021.10',
         description: '한국의 관광지를 소개해주는 웹사이트의 퍼블리싱을 담당하였습니다.',
         skills: [
@@ -143,7 +141,6 @@ export const projectData = [
     },
     {
         project: 'HDC 영창',
-        thumbnail: '/images/project/blackclover.png',
         date: '2021.06 ~ 2021.07',
         description: 'HDC 영창 LMS 웹사이트의 퍼블리싱 업무를 일부 담당하였습니다. 강의 업로드 로직 퍼블리싱 및 기능과 비디오 플레이어를 주로 개발 하였습니다.',
         skills: [
@@ -160,7 +157,6 @@ export const projectData = [
     },
     {
         project: '국가인적자원 컨소시엄',
-        thumbnail: '/images/project/blackclover.png',
         date: '2021.03 ~ 2021.05',
         description: '한국산업인력공단에서 진행하는 컨소시엄 웹사이트의 퍼블리싱을 담당하였습니다. 공기업에서 진행하는 프로젝트로 웹 접근성과 웹 표준을 엄격히 준수하였습니다.',
         skills: [
@@ -175,7 +171,6 @@ export const projectData = [
     },
     {
         project: 'KT-AI',
-        thumbnail: '/images/project/blackclover.png',
         date: '2021.02 ~ 2021.04',
         description: '음성 데이터를 텍스트로 변환하며 자막으로 생성하는 kt-ai 웹사이트의 퍼블리싱을 담당하였습니다.',
         skills: [
