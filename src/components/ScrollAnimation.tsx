@@ -31,7 +31,7 @@ const ScrollAnimation: React.FC<IScrollAnimationProps> = (props) =>
                     if(dom.current)
                     {
                         setFocus(true);
-                        dom.current.classList.add('scroll-animation-fade-up-visible');
+                        dom.current.classList.add('jhs-scroll-animation-fade-up-visible');
                     }
                 }, delay);
             }
@@ -58,7 +58,7 @@ const ScrollAnimation: React.FC<IScrollAnimationProps> = (props) =>
         <div
             {...rest}
             ref={dom}
-            className={`relative scroll-animation-fade-up ${className || ''}`}
+            className={`relative jhs-scroll-animation-fade-up ${className || ''}`}
         >
             {
                 focus &&
@@ -67,7 +67,7 @@ const ScrollAnimation: React.FC<IScrollAnimationProps> = (props) =>
                     </div>
             }
             {
-                <div className='opacity-0'>
+                <div className='relative opacity-0 -z-10'>
                     {(children) && children}
                 </div>
             }

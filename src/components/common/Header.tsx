@@ -8,34 +8,45 @@ const Header = () =>
     //state
     const [isScroll, setIsScroll] = React.useState(false);
     const [isConnect, setIsConnect] = React.useState(false);
+    const [isError, setIsError] = React.useState(false);
     const [count, setCount] = React.useState([]);
 
     React.useEffect(() => 
     {
-        //socket init
-        const socket = io('wss://port-0-websocket-server-2scwz2alua1clyv.sel5.cloudtype.app/');
-        //socket event
-        socket.on('connect', () => 
+        if(!isError)
         {
-            setIsConnect(true);
-            socket.on('accessor', (map) =>
+            //socket init
+            const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL as string);
+            //socket event
+            socket.on('connect', () => 
             {
-                setCount(map);
+                console.log('--소켓 연결 성공--');
+                setIsConnect(true);
+                socket.on('accessor', (map) =>
+                {
+                    setCount(map);
+                });
             });
-        });
-
-        const scrollEvent = () => 
-        {
-            setIsScroll(window.scrollY > 10);
-        };
-        document.addEventListener('scroll', scrollEvent);
-
-        return () => 
-        {
-            socket.disconnect();
-            document.removeEventListener('scroll', scrollEvent);
-        };
-    }, []);
+    
+            socket.on('connect_error', () => 
+            {
+                console.log('--소켓 연결 실패--');
+                setIsError(true);
+            });
+    
+            const scrollEvent = () => 
+            {
+                setIsScroll(window.scrollY > 10);
+            };
+            document.addEventListener('scroll', scrollEvent);
+    
+            return () => 
+            {
+                socket.disconnect();
+                document.removeEventListener('scroll', scrollEvent);
+            };
+        }
+    }, [isError]);
 
     return (
         <header
@@ -44,7 +55,7 @@ const Header = () =>
             {
                 isConnect &&
                     <div className='flex items-center'>
-                        <div className='relative mr-1 headerPrefixBox'>
+                        <div className='jhs-header-prefix-box mr-1'>
                             <div className={`absolute w-full h-full transition-opacity duration-500 ${isScroll ? 'opacity-100' : 'opacity-0'} `}>
                                 <Image
                                     src={'/images/icon/eye.svg'}

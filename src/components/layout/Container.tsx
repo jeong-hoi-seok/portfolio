@@ -22,24 +22,26 @@ const Container = (props: IContainerProps) =>
             className={`container px-4 py-10 mx-auto ${className}`}
         >
             {
-                subTitle &&
+                title &&
                     <ScrollAnimation
                         delay={250}
                     >
-                        <h3 className='text-1xl font-bold mb-1'>
-                            {subTitle}
+                        <h3 className='font-bold'>
+                            {title}
                         </h3>
                     </ScrollAnimation>
             }
             {
-                title &&
+                subTitle &&
                     <ScrollAnimation>
-                        <h2 className='text-3xl'>
-                            {title}
-                        </h2>
+                        <p className='text-xl text-slate-300'>
+                            {subTitle}
+                        </p>
                     </ScrollAnimation>
             }
-            {children && children}
+            <div className='relative mt-8'>
+                {children && children}
+            </div>
         </section>
     );
 };

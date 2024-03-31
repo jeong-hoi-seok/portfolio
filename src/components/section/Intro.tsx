@@ -42,11 +42,13 @@ const Intro = () =>
                 className='flex flex-col justify-center items-center h-dvh'
             >
                 <ScrollAnimation>
-                    <TextEffect
-                        className='text-8xl font-bold'
-                        delay={20}
-                        text={'안녕하세요!'}
-                    />
+                    <h2>
+                        <TextEffect
+                            className='text-8xl font-bold'
+                            delay={20}
+                            text={'안녕하세요!'}
+                        />
+                    </h2>
                 </ScrollAnimation>
                 <ScrollAnimation
                     delay={500}

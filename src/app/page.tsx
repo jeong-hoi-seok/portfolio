@@ -4,6 +4,7 @@ import React from 'react';
 import Intro from '@/components/section/Intro';
 import About from '@/components/section/About';
 import Projects from '@/components/section/projects';
+import Contact from '@/components/section/Contact';
 //components
 import DustEffect from '@/components/DustEffect';
 
@@ -14,6 +15,7 @@ const Home = () =>
             <Intro/>
             <About/>
             <Projects/>
+            <Contact/>
             <DustEffect
                 particle={170}
                 MinSpeed={100}

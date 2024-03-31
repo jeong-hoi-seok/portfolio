@@ -30,33 +30,64 @@ body {
     }
 }
 
-/* 커스텀 css는 이니셜을 앞에 붙이기 */
+/*
+    ---------
+    커스텀 css class는 이니셜을 앞에 붙이기
+    ---------
+*/
+
+/* 폰트 관련 커스텀 스타일 */
 @layer utilities {
     h1 {
-
+        @apply text-8xl;
+        @apply leading-tight;
     }
     h2 {
-        
+        @apply text-6xl;
+        @apply leading-tight;
     }
     h3 {
-        @apply text-xl;
+        @apply text-5xl;
+        @apply leading-tight;
+    }
+    h4 {
+        @apply text-4xl;
+        @apply leading-tight;
+    }
+    h5 {
+        @apply text-3xl;
+        @apply leading-tight;
+    }
+    h6 {
+        @apply text-2xl;
+        @apply leading-tight;
     }
     .text-balance {
         text-wrap: balance;
     }
-    .scroll-animation-fade-up {
+}
+
+
+/* 애니메이션 */
+@layer utilities {
+    .jhs-scroll-animation-fade-up {
         @apply opacity-0;
         @apply translate-y-4;
         transition: opacity cubic-bezier(.33,1,.68,1) .6s, transform cubic-bezier(.33,1,.68,1) .8s;
     }
-    .scroll-animation-fade-up-visible {
+    .jhs-scroll-animation-fade-up-visible {
         @apply opacity-100;
         @apply translate-y-0;
     }
+}
+
+/* 미분류 커스텀 CSS */
+@layer utilities {
     .jhs-bg-gradient-to-r-glitter {
         background: linear-gradient(to right,transparent 35%,rgba(255,255,255,.3) 70%,transparent 100%);
     }
-    .acrylic-box {
+    .jhs-acrylic-box {
+        @apply relative;
         @apply border;
         @apply rounded-lg;
         @apply border-slate-50/10;
@@ -67,7 +98,8 @@ body {
         @apply after:w-full;
         @apply after:jhs-bg-gradient-to-r-glitter;
     }
-    .headerPrefixBox {
+    .jhs-header-prefix-box {
+        @apply relative;
         @apply w-[30px];
         @apply h-[24px];
     }

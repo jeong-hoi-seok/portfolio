@@ -35,10 +35,10 @@ export const skillData = [
         name: 'Redux',
         logo: '/images/icon/redux.svg',
     },
-    {
-        name: 'AWS EC2',
-        logo: '/images/icon/awsEc2.svg',
-    },
+    // {
+    //     name: 'AWS EC2',
+    //     logo: '/images/icon/awsEc2.svg',
+    // },
     {
         name: 'Github Action',
         logo: '/images/icon/gitHubActions.svg',

@@ -5,16 +5,17 @@ import { projectData } from './projectData';
 //
 import Container from '@/components/layout/Container';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import TextEffect from '@/components/TextEffect';
 
 const Projects = () => 
 {
     return (
         <Container
-            title='프로젝트'
-            subTitle='Projects'
+            title='Projects' 
+            subTitle='프로젝트'
         >
             <div
-                className='columns-4 mt-8'
+                className='columns-3'
             >
                 {
                     projectData.map((d,i) => 
@@ -26,7 +27,7 @@ const Projects = () =>
                                 threshold={0.3}
                             >
                                 <div
-                                    className={'relative mb-4 acrylic-box p-4'}
+                                    className={'jhs-acrylic-box mb-4 p-4 break-inside-avoid'}
                                 >
                                     {
                                         d.thumbnail &&
@@ -38,13 +39,17 @@ const Projects = () =>
                                             </div>
                                     }
                                     <div>
-                                        <h3 className=''>
+                                        <h5 className='mb-1 font-medium tracking-tight'>
                                             {d.project}
-                                        </h3>
-                                        <p className='mt-1 text-xs text-gray-400'>
-                                            {d.date}
-                                        </p>
-                                        <p className='text-slate-300 text-sm mt-1'>
+                                        </h5>
+                                        <TextEffect
+                                            text={d.date}
+                                            delay={30}
+                                            className='mb-4 text-xs text-slate-400'
+                                        />
+                                        <p
+                                            className='text-slate-200'
+                                        >
                                             {d.description}
                                         </p>
                                     </div>

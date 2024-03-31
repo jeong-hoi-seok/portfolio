@@ -10,8 +10,8 @@ const About = () =>
 {
     return (
         <Container
-            title='저를 소개합니다!'
-            subTitle='About Me'
+            title='About Me'
+            subTitle='저를 소개합니다!'
         >
             <div className='grid grid-cols-12 gap-8'>
                 <div className='col-start-1 col-end-8'>
@@ -24,6 +24,7 @@ const About = () =>
                                     src={'/images/profile.jpg'}
                                     alt='my profile'
                                     fill
+                                    sizes='width: 176px'
                                     style={{
                                         objectFit: 'cover',
                                     }}
