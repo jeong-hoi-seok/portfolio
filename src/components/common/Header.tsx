@@ -67,13 +67,13 @@ const Header = () =>
                 isConnect &&
                     <React.Fragment>
                         <div
-                            className='cursor-pointer flex items-center'
+                            className='cursor-pointer flex items-center text-xs sm:text-sm md:text-base'
                             onClick={(e) => 
                             {
                                 setPopoverRef(e.currentTarget);
                             }}
                         >
-                            <div className='jhs-header-prefix-box'>
+                            <div className='jhs-header-prefix-box flex items-center justify-center'>
                                 <div className={`absolute w-full h-full transition-opacity duration-500 ${isScroll ? 'opacity-100' : 'opacity-0'} `}>
                                     <Image
                                         src={'/images/icon/eye.svg'}

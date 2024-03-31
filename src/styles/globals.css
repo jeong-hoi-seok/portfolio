@@ -101,8 +101,8 @@ body {
     }
     .jhs-header-prefix-box {
         @apply relative;
-        @apply w-[30px];
-        @apply h-[24px];
+        @apply w-[24px] sm:w-[30px];
+        @apply aspect-[30/24];
         @apply mr-1;
     }
     .jhs-container-padding {
