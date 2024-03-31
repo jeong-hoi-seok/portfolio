@@ -62,8 +62,8 @@ const Projects = () =>
                                                             key={ii}
                                                             className='flex'
                                                         >
-                                                            <p className='mr-1'>- </p>
-                                                            <p className='break-keep text-slate-200'>
+                                                            <p className='mr-1 lg:text-sm'>- </p>
+                                                            <p className='lg:text-sm break-keep text-slate-200'>
                                                                 {dd}
                                                             </p>
                                                         </li>

@@ -63,7 +63,7 @@ body {
         @apply leading-tight;
     }
     p {
-        @apply text-xs md:text-sm;
+        @apply text-xs md:text-sm xl:text-base;
         @apply leading-tight;
     }
 }

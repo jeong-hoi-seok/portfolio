@@ -15,8 +15,8 @@ const Home = () =>
         <React.Fragment>
             <Stack
                 direction='column'
-                spacing={4}
-                className='pb-48'
+                spacing={2}
+                className='pb-24 md:pb-32 lg:pb-48'
             >
                 <Intro/>
                 <About/>
