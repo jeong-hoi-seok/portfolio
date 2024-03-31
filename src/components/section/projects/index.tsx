@@ -15,7 +15,7 @@ const Projects = () =>
             subTitle='프로젝트'
         >
             <div
-                className='columns-3'
+                className='columns-1 sm:columns-2 lg:columns-3'
             >
                 {
                     projectData.map((d,i) => 
@@ -27,7 +27,7 @@ const Projects = () =>
                                 threshold={0.3}
                             >
                                 <div
-                                    className={'jhs-acrylic-box mb-4 p-4 pb-8 break-inside-avoid'}
+                                    className={'jhs-acrylic-box mb-3 sm:mb-4 p-4 pb-8 break-inside-avoid'}
                                 >
                                     {
                                         d.thumbnail &&
@@ -35,6 +35,7 @@ const Projects = () =>
                                                 <img
                                                     src={d.thumbnail}
                                                     alt={d.project}
+                                                    className='w-full object-contain'
                                                 />
                                             </div>
                                     }
@@ -48,11 +49,11 @@ const Projects = () =>
                                             className='mb-4 text-xs text-slate-400'
                                         />
                                         <p
-                                            className='text-slate-200 break-keep'
+                                            className='break-keep text-slate-200'
                                         >
                                             {d.description}
                                         </p>
-                                        <ul className='grid mt-5 gap-1'>
+                                        <ul className='grid mt-4 sm:mt-5 gap-1'>
                                             {
                                                 d.detail.map((dd,ii) => 
                                                 {
@@ -62,7 +63,7 @@ const Projects = () =>
                                                             className='flex'
                                                         >
                                                             <p className='mr-1'>- </p>
-                                                            <p className='text-sm break-keep text-slate-200'>
+                                                            <p className='break-keep text-slate-200'>
                                                                 {dd}
                                                             </p>
                                                         </li>

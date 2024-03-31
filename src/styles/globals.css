@@ -37,33 +37,34 @@ body {
 */
 
 /* 폰트 관련 커스텀 스타일 */
-@layer utilities {
+@layer base {
     h1 {
-        @apply text-8xl;
+        @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
         @apply leading-tight;
     }
     h2 {
-        @apply text-6xl;
+        @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl;
         @apply leading-tight;
     }
     h3 {
-        @apply text-5xl;
+        @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl;
         @apply leading-tight;
     }
     h4 {
-        @apply text-4xl;
+        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl;
         @apply leading-tight;
     }
     h5 {
-        @apply text-3xl;
+        @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl;
         @apply leading-tight;
     }
     h6 {
-        @apply text-2xl;
+        @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
         @apply leading-tight;
     }
-    .text-balance {
-        text-wrap: balance;
+    p {
+        @apply text-xs md:text-sm;
+        @apply leading-tight;
     }
 }
 
@@ -102,5 +103,9 @@ body {
         @apply relative;
         @apply w-[30px];
         @apply h-[24px];
+        @apply mr-1;
+    }
+    .jhs-container-padding {
+        @apply px-4 md:px-6 lg:px-8 py-6 md:py-8 lg:py-10;
     }
 }

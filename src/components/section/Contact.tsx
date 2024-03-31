@@ -17,8 +17,8 @@ const Contact = () =>
             title='Contact'
             subTitle='저를 더 알고 싶으시다면'
         >
-            <div className='grid grid-rows-1 jhs-acrylic-box min-h-[300px] py-6 px-8'>
-                <div className='mb-20'>
+            <div className='grid grid-rows-1 jhs-acrylic-box min-h-[200px] lg:min-h-[300px] py-4 px-4 md:py-5 md:px-6 lg:py-6 lg:px-8'>
+                <div className='mb-12 lg:mb-20'>
                     <Stack
                         direction='column'
                         spacing={2}
@@ -29,7 +29,7 @@ const Contact = () =>
                             </h4>
                             <Button
                                 variant='outlined'
-                                className='py-3 px-6 text-sm'
+                                className='py-2 md:py-3 px-5 md:px-6 text-xs md:text-sm'
                                 onClick={() => 
                                 {
                                     route('https://github.com/jeong-hoi-seok');
@@ -44,7 +44,7 @@ const Contact = () =>
                             </h4>
                             <Button
                                 variant='outlined'
-                                className='py-3 px-6 text-sm'
+                                className='py-2 md:py-3 px-5 md:px-6 text-xs md:text-sm'
                                 onClick={() => 
                                 {
                                     route('https://www.notion.so/hoirongko/eea23b4214c14587b189260e9c0099b0');
@@ -63,7 +63,7 @@ const Contact = () =>
                 <div>
                     <Button
                         type='button'
-                        className='text-slate-400 text-sm font-normal'
+                        className='text-slate-400 text-xs md:text-sm font-normal'
                         onClick={() => 
                         {
                             route('https://github.com/jeong-hoi-seok/portfolio');

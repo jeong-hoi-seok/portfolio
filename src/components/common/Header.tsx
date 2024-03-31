@@ -61,7 +61,7 @@ const Header = () =>
 
     return (
         <header
-            className='inline-flex fixed left-10 top-10 z-10'
+            className='inline-flex fixed left-5 lg:left-10 top-5 lg:top-10 z-10'
         >
             {
                 isConnect &&
@@ -73,7 +73,7 @@ const Header = () =>
                                 setPopoverRef(e.currentTarget);
                             }}
                         >
-                            <div className='jhs-header-prefix-box mr-1'>
+                            <div className='jhs-header-prefix-box'>
                                 <div className={`absolute w-full h-full transition-opacity duration-500 ${isScroll ? 'opacity-100' : 'opacity-0'} `}>
                                     <Image
                                         src={'/images/icon/eye.svg'}

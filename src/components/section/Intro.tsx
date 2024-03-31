@@ -39,12 +39,12 @@ const Intro = () =>
             className='relative'
         >
             <div
-                className='flex flex-col justify-center items-center h-dvh px-4'
+                className='flex flex-col justify-center items-center h-dvh jhs-container-padding'
             >
                 <ScrollAnimation>
-                    <h2>
+                    <h2 className='text-center'>
                         <TextEffect
-                            className='text-8xl font-bold'
+                            className='text-5xl sm:text-7xl lg:text-8xl font-bold'
                             delay={20}
                             text={'안녕하세요!'}
                         />
@@ -54,7 +54,7 @@ const Intro = () =>
                     delay={500}
                 >
                     <TextEffect
-                        className='text-2xl m-4 text-gray-300'
+                        className='text-base sm:text-xl md:text-2xl m-4 text-gray-300 break-keep text-center'
                         delay={20}
                         text={`${trumanShow()}입니다. 프론트엔드 개발자 정회석입니다!`}
                     />

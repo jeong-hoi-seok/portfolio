@@ -12,7 +12,7 @@ import { Autoplay } from 'swiper/modules';
 const Skills = () => 
 {
     return (
-        <div className='jhs-acrylic-box h-96'>
+        <div className='jhs-acrylic-box aspect-square lg:aspect-auto lg:h-64 xl:h-72 2xl:h-96'>
             <Swiper
                 autoplay={{
                     delay: 2000,
@@ -41,7 +41,7 @@ const Skills = () =>
                                                 />
                                         }
                                     </div>
-                                    <figcaption className='absolute text-1xl top-0 left-0 text-zinc-400'>
+                                    <figcaption className='absolute text-md lg:text-lg top-0 left-0 text-zinc-400'>
                                         {d.name}
                                     </figcaption>
                                 </figure>

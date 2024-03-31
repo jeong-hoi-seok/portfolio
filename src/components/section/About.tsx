@@ -13,13 +13,13 @@ const About = () =>
             title='About Me'
             subTitle='저를 소개합니다!'
         >
-            <div className='grid grid-cols-12 gap-8'>
-                <div className='col-span-7'>
-                    <div className='flex gap-12'>
+            <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
+                <div className='lg:col-span-7 mb-8 lg:mb-0'>
+                    <div className='lg:flex lg:gap-10 xl:gap-12'>
                         <ScrollAnimation
                             delay={400}
                         >
-                            <div className='relative w-44 h-44 bg-slate-600 rounded-full overflow-hidden'>
+                            <div className='relative w-full max-w-48 lg:max-w-44 lg:w-44 m-auto mb-6 lg:mb-0 aspect-square rounded-full overflow-hidden'>
                                 <Image
                                     src={'/images/profile.jpg'}
                                     alt='my profile'
@@ -71,7 +71,7 @@ const About = () =>
                     </div>
                 </div>
                 <ScrollAnimation
-                    className='col-start-10 col-span-3'
+                    className='lg:col-start-9 xl:col-start-10 lg:col-span-4 xl:col-span-3'
                 >
                     <Skills/>
                 </ScrollAnimation>

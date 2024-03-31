@@ -19,7 +19,7 @@ const Container = (props: IContainerProps) =>
     } = props;
     return (
         <section
-            className={`container px-4 py-10 mx-auto ${className}`}
+            className={`container jhs-container-padding mx-auto ${className}`}
         >
             {
                 title &&
@@ -34,12 +34,12 @@ const Container = (props: IContainerProps) =>
             {
                 subTitle &&
                     <ScrollAnimation>
-                        <p className='text-xl text-slate-300'>
+                        <p className='text-xs md:text-sm lg:text-xl text-slate-300'>
                             {subTitle}
                         </p>
                     </ScrollAnimation>
             }
-            <div className='relative mt-8'>
+            <div className='relative mt-4 sm:mt-5 md:mt-6 xl:mt-8'>
                 {children && children}
             </div>
         </section>
