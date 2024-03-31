@@ -100,29 +100,49 @@ const Button: React.FC<IButtonProps> = (props) =>
                 inline-flex
                 justify-center
                 items-center
+                w-auto
                 min-w-16
-                select-none
-                rounded-md
                 align-middle
                 appearance-none
-                box-border
-                no-underline
                 leading-tight
                 font-medium
+                box-border
+                no-underline
+                select-none
                 ${variant === 'contained' ? 'bg-slate-500' : 'bg-transparent'}
                 ${variant === 'outlined' ? 'border border-slate-500' : ''}
+                rounded-md
                 ${className}
             `}
         >
             {children}
-            <span className='absolute overflow-hidden pointer-events-none z-0 inset-0 rounded-[inherit]'>
+            <span
+                className='
+                    absolute
+                    inset-0
+                    z-0
+                    rounded-[inherit]
+                    overflow-hidden
+                    pointer-events-none
+                '
+            >
                 {
                     rippleStack.map((d,i) => 
                     {
                         return (
                             <span
                                 key={i}
-                                className='absolute pointer-events-none transform -translate-x-1/2 -translate-y-1/2 rounded-full w-full aspect-square animate-button-ripple'
+                                className='
+                                    absolute
+                                    w-full
+                                    aspect-square
+                                    rounded-full
+                                    pointer-events-none
+                                    transform
+                                    -translate-x-1/2
+                                    -translate-y-1/2
+                                    animate-button-ripple
+                                '
                                 style={{
                                     top: d.y,
                                     left: d.x,

@@ -5,6 +5,7 @@ import Intro from '@/components/section/Intro';
 import About from '@/components/section/About';
 import Projects from '@/components/section/projects';
 import Contact from '@/components/section/Contact';
+import Stack from '@/components/layout/Stack';
 //components
 import DustEffect from '@/components/DustEffect';
 
@@ -12,10 +13,16 @@ const Home = () =>
 {
     return (
         <React.Fragment>
-            <Intro/>
-            <About/>
-            <Projects/>
-            <Contact/>
+            <Stack
+                direction='column'
+                spacing={4}
+                className='pb-48'
+            >
+                <Intro/>
+                <About/>
+                <Projects/>
+                <Contact/>
+            </Stack>
             <DustEffect
                 particle={170}
                 MinSpeed={100}

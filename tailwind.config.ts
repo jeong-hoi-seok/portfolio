@@ -16,9 +16,14 @@ const config: Config = {
                     '0%': { filter:'blur(5px)', opacity:'0' },
                     '100%': { filter:'blur(0px)', opacity:'1' },
                 },
+                'button-ripple': {
+                    '0%': { filter:'blur(0px)', width: '0px', opacity: '0.15' },
+                    '100%': { filter:'blur(30px)', width: '300%', opacity: '0' },
+                },
             },
             animation: {
                 'show-blur': 'show-blur 0.7s linear forwards',
+                'button-ripple': 'button-ripple 0.4s linear forwards',
             },
         },
     },
