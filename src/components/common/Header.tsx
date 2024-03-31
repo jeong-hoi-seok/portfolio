@@ -65,41 +65,43 @@ const Header = () =>
         >
             {
                 isConnect &&
-                    <div
-                        className='cursor-pointer flex items-center'
-                        onClick={(e) => 
-                        {
-                            setPopoverRef(e.currentTarget);
-                        }}
-                    >
-                        <div className='jhs-header-prefix-box mr-1'>
-                            <div className={`absolute w-full h-full transition-opacity duration-500 ${isScroll ? 'opacity-100' : 'opacity-0'} `}>
-                                <Image
-                                    src={'/images/icon/eye.svg'}
-                                    alt='eye'
-                                    fill
+                    <React.Fragment>
+                        <div
+                            className='cursor-pointer flex items-center'
+                            onClick={(e) => 
+                            {
+                                setPopoverRef(e.currentTarget);
+                            }}
+                        >
+                            <div className='jhs-header-prefix-box mr-1'>
+                                <div className={`absolute w-full h-full transition-opacity duration-500 ${isScroll ? 'opacity-100' : 'opacity-0'} `}>
+                                    <Image
+                                        src={'/images/icon/eye.svg'}
+                                        alt='eye'
+                                        fill
+                                    />
+                                </div>
+                                <span className={`transition-opacity duration-500 ${isScroll ? 'opacity-0' : 'opacity-100'}`}>현재</span>
+                            </div>
+                            <span>{count.length}</span>
+                            <span className={`transition-opacity duration-500 ${isScroll ? 'opacity-0' : 'opacity-100'}`}>명이 저의 사이트를 보고있어요!</span>
+                        </div>
+                        <Popover
+                            open={Boolean(popoverRef)}
+                            anchorEl={popoverRef}
+                            closeCallback={() => 
+                            {
+                                setPopoverRef(null);
+                            }}
+                        >
+                            <div className='jhs-acrylic-box p-3'>
+                                <OSViewer
+                                    maps={count}
                                 />
                             </div>
-                            <span className={`transition-opacity duration-500 ${isScroll ? 'opacity-0' : 'opacity-100'}`}>현재</span>
-                        </div>
-                        <span>{count.length}</span>
-                        <span className={`transition-opacity duration-500 ${isScroll ? 'opacity-0' : 'opacity-100'}`}>명이 저의 사이트를 보고있어요!</span>
-                    </div>
+                        </Popover>
+                    </React.Fragment>
             }
-            <Popover
-                open={Boolean(popoverRef)}
-                anchorEl={popoverRef}
-                closeCallback={() => 
-                {
-                    setPopoverRef(null);
-                }}
-            >
-                <div className='jhs-acrylic-box p-3'>
-                    <OSViewer
-                        maps={count}
-                    />
-                </div>
-            </Popover>
         </header>
     );
 };
