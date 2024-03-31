@@ -14,8 +14,8 @@ const About = () =>
             subTitle='저를 소개합니다!'
         >
             <div className='grid grid-cols-12 gap-8'>
-                <div className='col-start-1 col-end-8'>
-                    <div className='flex mt-12 gap-12'>
+                <div className='col-span-7'>
+                    <div className='flex gap-12'>
                         <ScrollAnimation
                             delay={400}
                         >
@@ -71,7 +71,7 @@ const About = () =>
                     </div>
                 </div>
                 <ScrollAnimation
-                    className='col-end-12 col-span-3'
+                    className='col-start-10 col-span-3'
                 >
                     <Skills/>
                 </ScrollAnimation>

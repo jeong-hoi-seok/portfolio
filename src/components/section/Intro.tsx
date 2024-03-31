@@ -39,7 +39,7 @@ const Intro = () =>
             className='relative'
         >
             <div
-                className='flex flex-col justify-center items-center h-dvh'
+                className='flex flex-col justify-center items-center h-dvh px-4'
             >
                 <ScrollAnimation>
                     <h2>
