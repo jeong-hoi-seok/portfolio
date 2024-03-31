@@ -27,7 +27,7 @@ const Projects = () =>
                                 threshold={0.3}
                             >
                                 <div
-                                    className={'jhs-acrylic-box mb-4 p-4 break-inside-avoid'}
+                                    className={'jhs-acrylic-box mb-4 p-4 pb-8 break-inside-avoid'}
                                 >
                                     {
                                         d.thumbnail &&
@@ -39,19 +39,37 @@ const Projects = () =>
                                             </div>
                                     }
                                     <div>
-                                        <h5 className='mb-1 font-medium tracking-tight'>
+                                        <h6 className='mb-1 font-bold tracking-tight'>
                                             {d.project}
-                                        </h5>
+                                        </h6>
                                         <TextEffect
                                             text={d.date}
                                             delay={30}
                                             className='mb-4 text-xs text-slate-400'
                                         />
                                         <p
-                                            className='text-slate-200'
+                                            className='text-slate-200 break-keep'
                                         >
                                             {d.description}
                                         </p>
+                                        <ul className='grid mt-5 gap-1'>
+                                            {
+                                                d.detail.map((dd,ii) => 
+                                                {
+                                                    return (
+                                                        <li
+                                                            key={ii}
+                                                            className='flex'
+                                                        >
+                                                            <p className='mr-1'>- </p>
+                                                            <p className='text-sm break-keep text-slate-200'>
+                                                                {dd}
+                                                            </p>
+                                                        </li>
+                                                    );
+                                                })
+                                            }
+                                        </ul>
                                     </div>
                                 </div>
                             </ScrollAnimation>

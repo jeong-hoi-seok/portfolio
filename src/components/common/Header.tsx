@@ -2,14 +2,25 @@
 import React from 'react';
 import Image from 'next/image';
 import { io } from 'socket.io-client';
+//
+import Popover from '../popover/Popover';
+import OSViewer from '../OSViewer';
+
+export interface ICountProps {
+    browser: string;
+    connectionTime: Date;
+    id: string;
+    os: string;
+}
 
 const Header = () => 
 {
     //state
+    const [popoverRef, setPopoverRef] = React.useState<HTMLElement | null>(null); //셀렉트 박스 앵커 el
     const [isScroll, setIsScroll] = React.useState(false);
     const [isConnect, setIsConnect] = React.useState(false);
     const [isError, setIsError] = React.useState(false);
-    const [count, setCount] = React.useState([]);
+    const [count, setCount] = React.useState<ICountProps[]>([]); //현재 접속자 수
 
     React.useEffect(() => 
     {
@@ -54,7 +65,13 @@ const Header = () =>
         >
             {
                 isConnect &&
-                    <div className='flex items-center'>
+                    <div
+                        className='cursor-pointer flex items-center'
+                        onClick={(e) => 
+                        {
+                            setPopoverRef(e.currentTarget);
+                        }}
+                    >
                         <div className='jhs-header-prefix-box mr-1'>
                             <div className={`absolute w-full h-full transition-opacity duration-500 ${isScroll ? 'opacity-100' : 'opacity-0'} `}>
                                 <Image
@@ -69,6 +86,20 @@ const Header = () =>
                         <span className={`transition-opacity duration-500 ${isScroll ? 'opacity-0' : 'opacity-100'}`}>명이 저의 사이트를 보고있어요!</span>
                     </div>
             }
+            <Popover
+                open={Boolean(popoverRef)}
+                anchorEl={popoverRef}
+                closeCallback={() => 
+                {
+                    setPopoverRef(null);
+                }}
+            >
+                <div className='jhs-acrylic-box p-3'>
+                    <OSViewer
+                        maps={count}
+                    />
+                </div>
+            </Popover>
         </header>
     );
 };
