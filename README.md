@@ -13,18 +13,11 @@
 
 감사합니다! 🙏
 
-## 목차
-- [Home Page](#home-page)
-- [Tech Stack](#tech-stack)
-- [Deployment Environment](#deployment-environment) 
-- [CI/CD](#cicd)
-- [WebSocket Server](#websocket-server)
-- [Contact](#contact)
+## Home Page
 
-## Home Page {#home-page}
-https://portfolio-eta-pied-75.vercel.app/
+[포트폴리오 보러가기](https://portfolio-eta-pied-75.vercel.app/)
 
-## Tech Stack {#tech-stack}
+## Tech Stack
 - React.js v18
 - Next.js v14 (App Directory)
 - TypeScript
@@ -32,12 +25,12 @@ https://portfolio-eta-pied-75.vercel.app/
 - socket.io
 - swiper
 
-## Deployment Environment {#deployment-environment}
+## Deployment Environment
 [![My Skills](https://skillicons.dev/icons?i=nodejs,vercel)](https://skillicons.dev)
-- Node.js v20.11.0 이상
+- Node.js `v20.11.0` 이상
 - Vercel
 
-## CI/CD {#cicd}
+## CI/CD
 ### Github Action Pipline
 - main branch에 psuh 될 때 자동화 실행
 - vercel 자동 배포
@@ -63,9 +56,9 @@ jobs:
             vercel-args: '--prod'
 ```
 
-## WebSocket Server {#websocket-server}
+## WebSocket Server
 ### 웹 소켓 레포
-https://github.com/jeong-hoi-seok/websocket_server
+[웹 소켓 레포 보러가기](https://github.com/jeong-hoi-seok/websocket_server)
 
-## Contact {#contact}
+## Contact
 jeoing2222@gmail.com
