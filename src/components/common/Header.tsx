@@ -24,6 +24,7 @@ const Header = () =>
 
     React.useEffect(() => 
     {
+        console.log('env 테스트 - ', process.env.NEXT_PUBLIC_SOCKET_SERVER_URL);
         if(!isError)
         {
             //socket init
