@@ -43,8 +43,8 @@ export const skillData = [
         name: 'Github Action',
         logo: '/images/icon/gitHubActions.svg',
     },
-    {
-        name: 'Docker',
-        logo: '/images/icon/docker-mark-blue.svg',
-    },
+    // {
+    //     name: 'Docker',
+    //     logo: '/images/icon/docker-mark-blue.svg',
+    // },
 ];
